@@ -23,16 +23,7 @@ def load_and_save(category, filename, dataset, dataset_folder):
 
 
 def load_data(dataset):
-    if dataset == 'SMD':
-        dataset_folder = 'ServerMachineDataset'
-        #返回指定路径下的文件和文件夹列表
-        file_list = os.listdir(os.path.join(dataset_folder, "train"))
-        for filename in file_list:
-                if filename.endswith('.txt'):
-                    load_and_save('train', filename, filename.strip('.txt'), dataset_folder)  #strip()移出字符串前后指定的字符
-                    load_and_save('test', filename, filename.strip('.txt'), dataset_folder)
-                    load_and_save('test_label', filename, filename.strip('.txt'), dataset_folder)
-    elif dataset == 'SMAP' or dataset == 'MSL':
+    if dataset == 'SMAP' or dataset == 'MSL':
         dataset_folder = 'data'
         with open(os.path.join(dataset_folder, 'labeled_anomalies.csv'), 'r') as file:
             csv_reader = csv.reader(file, delimiter=',')
@@ -112,7 +103,7 @@ def load_data(dataset):
 
 
 if __name__ == '__main__':
-    datasets = ['SMD', 'SMAP', 'MSL', 'SWaT', 'WADI']
+    datasets = ['SMAP', 'MSL', 'SWaT', 'WADI']
     commands = sys.argv[1:]
     load = []
     if len(commands) > 0:
@@ -122,5 +113,5 @@ if __name__ == '__main__':
     else:
         print("""
         Usage: python data_preprocess.py <datasets>
-        where <datasets> should be one of ['SMD', 'SMAP', 'MSL']
+        where <datasets> should be one of ['SMAP', 'MSL', 'SWaT', 'WADI']
         """)
