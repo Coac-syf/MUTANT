@@ -24,4 +24,4 @@ where `<dataset>` is one of `SMAP`, `MSL`, `SWaT` and `WADI`, then you will get 
 ## Run Code
 `python main.py`
 
-If you want to change the default configuration, you can edit `ExpConfig` in `main.py`
+If you want to change the default configuration, you can edit `ExpConfig` in `main.py`. Such as if you want to change dataset, you can change the value of 'dataset'.
