@@ -24,4 +24,4 @@ where `<dataset>` is one of `SMAP`, `MSL`, `SWaT` and `WADI`, then you will get 
 ## Run Code
 `python main.py`
 
-If you want to change dataset, please change the value of 'dataset' in the main.py, and change the values of parameters 'window_length', 'hidden_size' 
+If you want to change dataset, please change the value of 'dataset' in the main.py, and change the values of parameters 'window_length', 'hidden_size' etc.
