@@ -17,9 +17,9 @@ The used datasets are available at:
 * SWaT&WADI https://itrust.sutd.edu.sg/itrust-labsdatasets/datasetinfo/
 
 ### Preprocess the data
-`python data_preprocess.py \<dataset\>`
+`python data_preprocess.py <dataset>`
 
-where \<dataset\> is one of SMAP, MSL, SWaT, WADI
+where `<dataset>` is one of `SMAP`, `MSL`, `SWaT` and `WADI`, then you will get `<dataset>_train.pkl`, `<dataset>_test.pkl' and `<dataset>_test_label.pkl`
 
 ## Run Code
 `python main.py`
