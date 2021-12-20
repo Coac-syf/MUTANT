@@ -17,7 +17,8 @@ The used datasets are available at:
 * SWaT&WADI https://itrust.sutd.edu.sg/itrust-labsdatasets/datasetinfo/
 
 ### Preprocess the data
-python data_preprocess.py <dataset>
+python data_preprocess.py <dataset> 
+
 where <dataset> is one of SMAP, MSL, SWaT, WADI
 
 
