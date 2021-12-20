@@ -19,7 +19,7 @@ The used datasets are available at:
 ### Preprocess the data
 `python data_preprocess.py <dataset>`
 
-where `<dataset>` is one of `SMAP`, `MSL`, `SWaT` and `WADI`, then you will get `<dataset>_train.pkl`, `<dataset>_test.pkl` and `<dataset>_test_label.pkl`.
+where `<dataset>` is one of `SMAP`, `MSL`, `SWaT` and `WADI`, then you will get `<dataset>_train.pkl`, `<dataset>_test.pkl` and `<dataset>_test_label.pkl` in folder ‘processed’.
 
 ## Run Code
 `python main.py`
