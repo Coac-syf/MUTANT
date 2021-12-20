@@ -8,7 +8,7 @@ from tqdm import tqdm
 from Model import MUTANT
 
 class ExpConfig():
-    dataset = "MSL"
+    dataset = "SMAP"
     val = 0.35
     max_train_size = None  # `None` means full train set
     train_start = 0
@@ -21,8 +21,8 @@ class ExpConfig():
 
     out_dim = 5
     window_length = 20
-    hidden_size = 120
-    latent_size = 120
+    hidden_size = 60
+    latent_size = 60
 
 def main():
     config = ExpConfig()
@@ -65,7 +65,7 @@ def main():
     save_path = 'model.pt'
     flag = 0
     f1 = -1
-    for epoch in range(10):
+    for epoch in range(20):
         l = 0
         optimizer.zero_grad()
         for inputs in tqdm(train_loader):
