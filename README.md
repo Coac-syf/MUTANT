@@ -21,8 +21,5 @@ python data_preprocess.py <dataset>
 
 where <dataset> is one of SMAP, MSL, SWaT, WADI
 
-
-In addition, we also sample the positive and negative edges in the network, and divide them into three text files: train, valid and test for link prediction.
-
-## Usage
-First, you need to determine the data set. If you want to do node classification tasks, you need to modify the data set path in `Node_classification.py`. If you want to do link prediction, you need to modify the dataset path in `Link_prediction.py`.
+## Run Code
+main.py
