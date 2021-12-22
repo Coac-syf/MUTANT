@@ -31,6 +31,9 @@ If you want to change the default configuration, you can edit `ExpConfig` in `ma
 
 ### Recommended parameter settings
 MSL: `out_dim=5`, `window_length=20`, `hidden_size`=120, `latent_size`=120
+
 SMAP: `out_dim=5`, `window_length=20`, `hidden_size`=60, `latent_size`=60
+
 SWaT: `out_dim=5`, `window_length=20`, `hidden_size`=120, `latent_size`=120
+
 WADI:`out_dim=3`, `window_length=5`, `hidden_size`=120, `latent_size`=120
