@@ -9,7 +9,7 @@ from Model import MUTANT
 
 class ExpConfig():
     dataset = "SMAP"
-    val = 0.35
+    val = 0.35  # the ratio of validation set
     max_train_size = None  # `None` means full train set
     train_start = 0
 
@@ -19,10 +19,10 @@ class ExpConfig():
     input_dim = get_data_dim(dataset)
     batch_size = 120
 
-    out_dim = 5
+    out_dim = 5   # the dimension of embedding
     window_length = 20
-    hidden_size = 60
-    latent_size = 60
+    hidden_size = 60  # the dimension of hidden layer in LSTM-based attention
+    latent_size = 60  # the dimension of hidden layer in VAE
 
 def main():
     config = ExpConfig()
