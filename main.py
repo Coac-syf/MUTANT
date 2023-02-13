@@ -21,8 +21,8 @@ class ExpConfig():
 
     out_dim = 5   # the dimension of embedding
     window_length = 20
-    hidden_size = 60  # the dimension of hidden layer in LSTM-based attention
-    latent_size = 60  # the dimension of hidden layer in VAE
+    hidden_size = 80  # the dimension of hidden layer in LSTM-based attention
+    latent_size = 80  # the dimension of hidden layer in VAE
 
 def main():
     config = ExpConfig()
@@ -65,7 +65,7 @@ def main():
     save_path = 'model.pt'
     flag = 0
     f1 = -1
-    for epoch in range(20):
+    for epoch in range(5):
         l = 0
         optimizer.zero_grad()
         for inputs in tqdm(train_loader):
