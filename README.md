@@ -1,5 +1,5 @@
 # MUTANT
-For TKDE-submission
+For KBS-submission
 > Robust Anomaly Detection for Multivariate Time Series through Temporal GCNs and Attention-based VAE
 
 ## Dependencies
