@@ -23,6 +23,7 @@ class ExpConfig():
     window_length = 20
     hidden_size = 80  # the dimension of hidden layer in LSTM-based attention
     latent_size = 80  # the dimension of hidden layer in VAE
+    N = 256
 
 def main():
     config = ExpConfig()
@@ -65,16 +66,17 @@ def main():
     save_path = 'model.pt'
     flag = 0
     f1 = -1
-    for epoch in range(5):
+    for epoch in range(10):
         l = 0
-        optimizer.zero_grad()
+        i = 0
         for inputs in tqdm(train_loader):
             loss = model(inputs)
             loss.backward()
-            l += loss.item()
-        optimizer.step()
-        print(epoch, l)
-
+            if(i% config.N == 0):
+                optimizer.step()
+                optimizer.zero_grad()
+            i += 1
+            
         if(flag == 1):
             model.load_state_dict(torch.load(save_path))
         val_score = model.is_anomaly(val_loader, num_val, con_val)
