@@ -1,5 +1,5 @@
 # MUTANT
-For TNNLS‘22-submission
+For TKDE-submission
 > Robust Anomaly Detection for Multivariate Time Series through Temporal GCNs and Attention-based VAE
 
 ## Dependencies
