@@ -187,7 +187,7 @@ class MUTANT(nn.Module):
             A = torch.tensor(returnA(i))
             x_g = self.GCN(i.permute(1, 0), A).permute(1, 0)
             loss = GCN_Loss(x_g)
-            l0 = l0 + loss
+            l0 = loss
             x_g = x_g.detach().numpy()
             Xt.append(x_g)
         Xt = torch.tensor(Xt, dtype=torch.float32)
